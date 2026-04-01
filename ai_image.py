@@ -8,7 +8,7 @@ from tkinter import filedialog, scrolledtext, messagebox
 
 STUDENT_ID = "202335020537"
 STUDENT_NAME = "汤明婷"
-# =================================================================
+
 
 API_KEY = "bOhC5kIeul0K1psuvNXBmEZU"
 SECRET_KEY = "goYnWWb842iuWYz6MaoldJUM8cBYkBaC"
@@ -117,14 +117,13 @@ def show_gui():
         result_box.delete(1.0, tk.END)
         result_box.insert(tk.END, result)
 
-    # 按钮样式 - 这里修改为绿色
     btn = tk.Button(
         root,
         text="选择图片并识别",
         font=("微软雅黑", 15, "bold"),
         command=select_and_recognize,
-        bg="#4CAF50",  # ✅ 改成了绿色 (草绿)
-        fg="white",    # 字体保持白色，确保清晰
+        bg="#4CAF50",  
+        fg="white",   
         padx=40,
         pady=10,
         relief=tk.RIDGE,
